@@ -6,7 +6,12 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public Button[] panels;
+    public Image[] panelImages;
     public Button panel;
+
+    public Button startingPipe;
+    public Image startingPipeImage;
+    public bool IsSet;
 
     public GameObject nextPanel;
 
@@ -16,7 +21,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Hello");
+        startingPipe = panels[Random.Range(0, panelImages.Length)];
+        startingPipe.interactable = false;
+        startingPipe.GetComponent<Image>().sprite = pipeArray[Random.Range(0, pipeArray.Length)];
     }
 
     // Update is called once per frame
@@ -24,5 +31,11 @@ public class GameManager : MonoBehaviour
     {
         
     }
+
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    Debug.Log("Ta dam!");
+    //    Debug.Log("Name: " + gameObject.name);
+    //}
 
 }
