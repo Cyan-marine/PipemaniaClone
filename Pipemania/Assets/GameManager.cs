@@ -9,25 +9,14 @@ public class GameManager : MonoBehaviour
 
     public Button[] panels;
     public Image[] panelImages;
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
     public Button panel;
     public Image panelImage;
     public PanelScript panelScript;
 
-<<<<<<< Updated upstream
-    public Button startingPipe;
-    public Image startingPipeImage;
-    public bool IsSet;
-
-    public GameObject nextPanel;
-=======
     public Button startPipe;
     public Image startPipeImage;
     public bool IsSet;
->>>>>>> Stashed changes
 
     public Sprite[] pipeArray;
     public Sprite[] startArray;
@@ -62,11 +51,6 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-<<<<<<< Updated upstream
-        startingPipe = panels[Random.Range(0, panelImages.Length)];
-        startingPipe.interactable = false;
-        startingPipe.GetComponent<Image>().sprite = pipeArray[Random.Range(0, pipeArray.Length)];
-=======
         startPipe = panels[Random.Range(0, panelImages.Length)];
         startPipe.interactable = false;
         startPipeImage = startPipe.GetComponent<Image>();
@@ -86,7 +70,6 @@ public class GameManager : MonoBehaviour
         Type();
 
         StartCoroutine(FillStartPipe());
->>>>>>> Stashed changes
     }
 
     // Update is called once per frame
@@ -218,15 +201,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-<<<<<<< Updated upstream
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    Debug.Log("Ta dam!");
-    //    Debug.Log("Name: " + gameObject.name);
-    //}
-
-}
-=======
     //public void FillPipe()
     //{
     //    Debug.Log("Fill Pipe method on");
@@ -307,4 +281,3 @@ public class GameManager : MonoBehaviour
         }
     }
 }
->>>>>>> Stashed changes

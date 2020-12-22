@@ -1085,8 +1085,6 @@ PrefabInstance:
       propertyPath: panelImage
       value: 
       objectReference: {fileID: 103248879}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
       propertyPath: conTop
@@ -1097,7 +1095,6 @@ PrefabInstance:
       propertyPath: conLeft
       value: 0
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
       propertyPath: m_Name
@@ -1306,11 +1303,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 4
-=======
   m_RootOrder: 3
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &159388779
 GameObject:
@@ -5370,69 +5363,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream:Pipemania/Assets/Scenes/MainScene.unity
---- !u!1 &708452635
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 708452636}
-  - component: {fileID: 708452637}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &708452636
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 708452635}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 656.4878, y: 633.59985, z: -389.43793}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &708452637
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 708452635}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -308.8601, y: -302.64563}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 271.99878, y: 284.60364}
-  m_EdgeRadius: 0
-=======
->>>>>>> Stashed changes:Pipemania/Assets/Scenes/Backup.unity
-=======
->>>>>>> Stashed changes
 --- !u!1001 &723468723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6067,11 +5997,7 @@ RectTransform:
   m_Children:
   - {fileID: 732179943}
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 3
-=======
   m_RootOrder: 2
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6432,18 +6358,11 @@ MonoBehaviour:
   - {fileID: 16385459}
   - {fileID: 2121467933}
   panel: {fileID: 6329069418552258378, guid: 1613bf481d385c6459d32e7b7de1314b, type: 3}
-<<<<<<< Updated upstream
-  startingPipe: {fileID: 0}
-  startingPipeImage: {fileID: 0}
-  IsSet: 0
-  nextPanel: {fileID: 579472779}
-=======
   panelImage: {fileID: 0}
   panelScript: {fileID: 0}
   startPipe: {fileID: 0}
   startPipeImage: {fileID: 0}
   IsSet: 0
->>>>>>> Stashed changes
   pipeArray:
   - {fileID: 21300000, guid: 333cf33f80ad5534faecb88e409a9497, type: 3}
   - {fileID: 21300000, guid: 2cf19fa4fb872db41b147a2a60b43ce2, type: 3}
@@ -6452,11 +6371,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b58f4ce2fe9fcc147ab85806dd4afc4a, type: 3}
   - {fileID: 21300000, guid: 7f95ab1794f8c1b45a5ab12149d337e2, type: 3}
   - {fileID: 21300000, guid: 243928b4ddb037c4e91d178e76a7b6c9, type: 3}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream:Pipemania/Assets/Scenes/MainScene.unity
-=======
-=======
->>>>>>> Stashed changes
   startArray:
   - {fileID: 21300000, guid: efa8c0f819217c64591bcf930be029c1, type: 3}
   - {fileID: 21300000, guid: bbed91e99821f7e468a1ae8d89d50204, type: 3}
@@ -6479,13 +6393,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9491b1f3c7b65fc4d9cebca772601c1a, type: 3}
   - {fileID: 21300000, guid: 26ff992f73e6c554894c2c5d5d2998ce, type: 3}
   - {fileID: 21300000, guid: 34714fbae2b352d44a7606fef0e23d14, type: 3}
-<<<<<<< Updated upstream
-  colliderLeft: {fileID: 0}
-  colliderTop: {fileID: 0}
-  colliderRight: {fileID: 0}
-  colliderBottom: {fileID: 0}
->>>>>>> Stashed changes:Pipemania/Assets/Scenes/Backup.unity
-=======
   fillBL:
   - {fileID: 21300000, guid: 305666aef9cc5bb4aa3a135136479f12, type: 3}
   - {fileID: 21300000, guid: 3a00895569ca3d24d84eea95d86094bc, type: 3}
@@ -6541,7 +6448,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d79b94d221c1c6a47a735f998e9f97a7, type: 3}
   - {fileID: 21300000, guid: 64d339bc7d3b84d4da93fb2f3d843ced, type: 3}
   conBool: 0
->>>>>>> Stashed changes
 --- !u!4 &850327362
 Transform:
   m_ObjectHideFlags: 0
@@ -6554,11 +6460,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 2
-=======
   m_RootOrder: 1
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &854503422
 GameObject:

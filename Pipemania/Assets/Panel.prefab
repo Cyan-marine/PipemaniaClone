@@ -55,11 +55,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-<<<<<<< Updated upstream
-  m_Size: {x: 37.59, y: 16.48}
-=======
   m_Size: {x: 37.59, y: 41.6}
->>>>>>> Stashed changes
   m_EdgeRadius: 0
 --- !u!1 &3541631500405675233
 GameObject:
@@ -116,11 +112,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-<<<<<<< Updated upstream
-  m_Size: {x: 23.3, y: 20.52}
-=======
   m_Size: {x: 50, y: 20.52}
->>>>>>> Stashed changes
   m_EdgeRadius: 0
 --- !u!1 &6329069418552258369
 GameObject:
@@ -260,10 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 6329069418552258378}
   IsSet: 0
-<<<<<<< Updated upstream
-=======
   gameOver: {fileID: 0}
->>>>>>> Stashed changes
   panelImage: {fileID: 6329069418552258375}
   panelOneImage: {fileID: 0}
   panelTwoImage: {fileID: 0}
@@ -281,13 +270,6 @@ MonoBehaviour:
   colliderTop: {fileID: 0}
   colliderRight: {fileID: 0}
   colliderBottom: {fileID: 0}
-<<<<<<< Updated upstream
-  ConnectionsTop: 0
-  ConnectionsLeft: 0
-  ConnectionsBottom: 0
-  ConnectionsRight: 0
-=======
->>>>>>> Stashed changes
 --- !u!61 &-312292185381981529
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -390,11 +372,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-<<<<<<< Updated upstream
-  m_Size: {x: 53.14, y: 25.94}
-=======
   m_Size: {x: 53.14, y: 49.7}
->>>>>>> Stashed changes
   m_EdgeRadius: 0
 --- !u!1 &8327909849269030602
 GameObject:
@@ -451,9 +429,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-<<<<<<< Updated upstream
-  m_Size: {x: 25, y: 20.04}
-=======
   m_Size: {x: 51.8, y: 20.04}
->>>>>>> Stashed changes
   m_EdgeRadius: 0
