@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PanelScript : MonoBehaviour
 {
+    public bool gameOver;
     public Button panel;
     private bool IsSet;
 
@@ -37,17 +38,11 @@ public class PanelScript : MonoBehaviour
 
     void Update()
     {
-        //if (Input.GetMouseButtonDown(1))
-        //{
-        //    Debug.Log("Pressed right click, casting ray.");
-        //    CastRay();
-        //}
+        //game over bool
     }
 
     public void ButtonClicked()
     {
-        //Debug.Log("You have clicked the button!");
-
         panel.GetComponent<Image>().sprite = panelFourImage.sprite;
         panelFourImage.sprite = panelThreeImage.sprite;
         panelThreeImage.sprite = panelTwoImage.sprite;
@@ -63,7 +58,7 @@ public class PanelScript : MonoBehaviour
         Type();
     }
 
-    public void OnTriggerStay2D(Collider2D collision)
+    IEnumerator OnTriggerStay2D(Collider2D collision)
     {
         //Debug.Log("OnTrigger method");
         //Debug.Log("Name: " + gameObject.name);
@@ -82,7 +77,7 @@ public class PanelScript : MonoBehaviour
                     GameManager.instance.startPipeImage.sprite == GameManager.instance.startFill[11] ||
                     GameManager.instance.startPipeImage.sprite == GameManager.instance.startFill[15])
                 {
-                    Debug.Log("PanelScript reads start pipe images");
+                    //Debug.Log("PanelScript reads start pipe images");
                     //GameManager.instance.FillPipe();
                     conBool = true;
                 }
@@ -106,7 +101,7 @@ public class PanelScript : MonoBehaviour
                     GameManager.instance.startPipeImage.sprite == GameManager.instance.startFill[11] ||
                     GameManager.instance.startPipeImage.sprite == GameManager.instance.startFill[15])
                 {
-                    Debug.Log("PanelScript reads start pipe images");
+                    //Debug.Log("PanelScript reads start pipe images");
                     //GameManager.instance.FillPipe();
                     conBool = true;
                 }
@@ -130,7 +125,7 @@ public class PanelScript : MonoBehaviour
                     GameManager.instance.startPipeImage.sprite == GameManager.instance.startFill[11] ||
                     GameManager.instance.startPipeImage.sprite == GameManager.instance.startFill[15])
                 {
-                    Debug.Log("PanelScript reads start pipe images");
+                    //Debug.Log("PanelScript reads start pipe images");
                     //GameManager.instance.FillPipe();
                     conBool = true;
                 }
@@ -154,7 +149,7 @@ public class PanelScript : MonoBehaviour
                     GameManager.instance.startPipeImage.sprite == GameManager.instance.startFill[11] ||
                     GameManager.instance.startPipeImage.sprite == GameManager.instance.startFill[15])
                 {
-                    Debug.Log("PanelScript reads start pipe images");
+                    //Debug.Log("PanelScript reads start pipe images");
                     //GameManager.instance.FillPipe();
                     conBool = true;
                 }
@@ -167,46 +162,330 @@ public class PanelScript : MonoBehaviour
             }
         }
 
+        Debug.Log("coonbool: " + conBool + " gameObject name: " + gameObject.name);
+
         if (conBool == true && gameObject.name == GameManager.instance.startPipe.name)
         {
             collImage = collision.gameObject.GetComponentInParent<Image>();
+            yield return new WaitForSeconds(2);
             if (collImage.sprite == pipeArray[0])
             {
-                Debug.Log("Next pipe should fill now");
-                collImage.sprite = GameManager.instance.fillBL[0];
+                if (collision.gameObject.name == "Bottom")
+                {
+                    collImage.sprite = GameManager.instance.fillBL[0];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBL[1];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBL[2];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBL[3];
+                }
+
+                else if (collision.gameObject.name == "Left")
+                {
+                    collImage.sprite = GameManager.instance.fillBL[4];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBL[5];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBL[6];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBL[7];
+                }
             }
 
             else if (collImage.sprite == pipeArray[1])
             {
-                Debug.Log("Next pipe should fill now");
-                collImage.sprite = GameManager.instance.fillBR[0];
+                if (collision.gameObject.name == "Bottom")
+                {
+                    collImage.sprite = GameManager.instance.fillBR[0];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBR[1];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBR[2];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBR[3];
+                }
+
+                if (collision.gameObject.name == "Right")
+                {
+                    collImage.sprite = GameManager.instance.fillBR[4];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBR[5];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBR[6];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBR[7];
+                }
             }
 
             else if (collImage.sprite == pipeArray[2])
             {
-                Debug.Log("Next pipe should fill now");
-                collImage.sprite = GameManager.instance.fillV[0];
+                if (collision.gameObject.name == "Bottom")
+                {
+                    collImage.sprite = GameManager.instance.fillV[0];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillV[1];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillV[2];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillV[3];
+                }
+
+                if (collision.gameObject.name == "Top")
+                {
+                    collImage.sprite = GameManager.instance.fillV[4];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillV[5];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillV[6];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillV[7];
+                }
             }
 
             else if (collImage.sprite == pipeArray[3])
             {
-                Debug.Log("Next pipe should fill now");
-                collImage.sprite = GameManager.instance.fillH[0];
+                if (collision.gameObject.name == "Left")
+                {
+                    collImage.sprite = GameManager.instance.fillH[0];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillH[1];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillH[2];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillH[3];
+                }
+
+                if (collision.gameObject.name == "Right")
+                {
+                    collImage.sprite = GameManager.instance.fillH[4];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillH[5];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillH[6];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillH[7];
+                }
             }
 
             else if (collImage.sprite == pipeArray[4])
             {
-                Debug.Log("Next pipe should fill now");
-                collImage.sprite = GameManager.instance.fillTL[0];
+                if (collision.gameObject.name == "Left")
+                {
+                    collImage.sprite = GameManager.instance.fillTL[0];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTL[1];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTL[2];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTL[3];
+                }
+
+                if (collision.gameObject.name == "Top")
+                {
+                    collImage.sprite = GameManager.instance.fillTL[4];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTL[5];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTL[6];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTL[7];
+                }
             }
 
             else if (collImage.sprite == pipeArray[5])
             {
-                Debug.Log("Next pipe should fill now");
-                collImage.sprite = GameManager.instance.fillTR[0];
+                if (collision.gameObject.name == "Left")
+                {
+                    collImage.sprite = GameManager.instance.fillTR[0];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTR[1];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTR[2];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTR[3];
+                }
+
+                if (collision.gameObject.name == "Top")
+                {
+                    collImage.sprite = GameManager.instance.fillTR[4];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTR[5];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTR[6];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTR[7];
+                }
             }
         }
 
+        if (conBool == true &&
+           (gameObject.GetComponent<Image>().sprite == GameManager.instance.fillBL[3] ||
+           gameObject.GetComponent<Image>().sprite == GameManager.instance.fillBL[7] ||
+           gameObject.GetComponent<Image>().sprite == GameManager.instance.fillBR[3] ||
+           gameObject.GetComponent<Image>().sprite == GameManager.instance.fillBR[7] ||
+           gameObject.GetComponent<Image>().sprite == GameManager.instance.fillV[3] ||
+           gameObject.GetComponent<Image>().sprite == GameManager.instance.fillV[7] ||
+           gameObject.GetComponent<Image>().sprite == GameManager.instance.fillH[3] ||
+           gameObject.GetComponent<Image>().sprite == GameManager.instance.fillH[7] ||
+           gameObject.GetComponent<Image>().sprite == GameManager.instance.fillTL[3] ||
+           gameObject.GetComponent<Image>().sprite == GameManager.instance.fillTL[7] ||
+           gameObject.GetComponent<Image>().sprite == GameManager.instance.fillTR[3] ||
+           gameObject.GetComponent<Image>().sprite == GameManager.instance.fillTR[7]
+           ))
+        {
+            collImage = collision.gameObject.GetComponentInParent<Image>();
+            yield return new WaitForSeconds(2);
+            if (collImage.sprite == pipeArray[0])
+            {
+                if (collision.gameObject.name == "Bottom")
+                {
+                    collImage.sprite = GameManager.instance.fillBL[0];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBL[1];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBL[2];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBL[3];
+                }
+
+                else if (collision.gameObject.name == "Left")
+                {
+                    collImage.sprite = GameManager.instance.fillBL[4];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBL[5];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBL[6];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBL[7];
+                }
+            }
+
+            else if (collImage.sprite == pipeArray[1])
+            {
+                if (collision.gameObject.name == "Bottom")
+                {
+                    collImage.sprite = GameManager.instance.fillBR[0];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBR[1];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBR[2];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBR[3];
+                }
+
+                if (collision.gameObject.name == "Right")
+                {
+                    collImage.sprite = GameManager.instance.fillBR[4];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBR[5];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBR[6];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillBR[7];
+                }
+            }
+
+            else if (collImage.sprite == pipeArray[2])
+            {
+                if (collision.gameObject.name == "Bottom")
+                {
+                    collImage.sprite = GameManager.instance.fillV[0];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillV[1];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillV[2];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillV[3];
+                }
+
+                if (collision.gameObject.name == "Top")
+                {
+                    collImage.sprite = GameManager.instance.fillV[4];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillV[5];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillV[6];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillV[7];
+                }
+            }
+
+            else if (collImage.sprite == pipeArray[3])
+            {
+                if (collision.gameObject.name == "Left")
+                {
+                    collImage.sprite = GameManager.instance.fillH[0];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillH[1];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillH[2];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillH[3];
+                }
+
+                if (collision.gameObject.name == "Right")
+                {
+                    collImage.sprite = GameManager.instance.fillH[4];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillH[5];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillH[6];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillH[7];
+                }
+            }
+
+            else if (collImage.sprite == pipeArray[4])
+            {
+                if (collision.gameObject.name == "Left")
+                {
+                    collImage.sprite = GameManager.instance.fillTL[0];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTL[1];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTL[2];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTL[3];
+                }
+
+                if (collision.gameObject.name == "Top")
+                {
+                    collImage.sprite = GameManager.instance.fillTL[4];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTL[5];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTL[6];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTL[7];
+                }
+            }
+
+            else if (collImage.sprite == pipeArray[5])
+            {
+                if (collision.gameObject.name == "Left")
+                {
+                    collImage.sprite = GameManager.instance.fillTR[0];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTR[1];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTR[2];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTR[3];
+                }
+
+                if (collision.gameObject.name == "Top")
+                {
+                    collImage.sprite = GameManager.instance.fillTR[4];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTR[5];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTR[6];
+                    yield return new WaitForSeconds(2);
+                    collImage.sprite = GameManager.instance.fillTR[7];
+                }
+            }
+        }
     }
 
     public void EnableColliders()
@@ -318,20 +597,5 @@ public class PanelScript : MonoBehaviour
             DisableColliders();
         }
     }
-
-    //void CastRay()
-    //{
-    //    Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-    //    Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
-    //    RaycastHit2D hit = Physics2D.Raycast(mousePos2D, -Vector2.up);
-    //    if (hit.collider != null)
-    //    {
-    //        Debug.Log("Hit object: "); //+ hit.collider.gameobject.name);
-    //        Debug.Log(hit.collider.gameObject.name);
-    //        IsSet = false;
-    //        panel.interactable = true;
-    //        panelImage.sprite = emptyPanel;
-    //    }
-    //}
 
 }

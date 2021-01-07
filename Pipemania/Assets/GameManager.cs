@@ -72,7 +72,6 @@ public class GameManager : MonoBehaviour
         StartCoroutine(FillStartPipe());
     }
 
-    // Update is called once per frame
     void Update()
     {
 
