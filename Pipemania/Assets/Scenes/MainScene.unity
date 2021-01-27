@@ -157,7 +157,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -339,7 +339,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -650,7 +650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.015686275, g: 0.015686275, b: 0.015686275, a: 1}
+  m_Color: {r: 0.078431375, g: 0.06666667, b: 0.0627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -709,7 +709,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -896,7 +896,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -1078,7 +1078,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -1424,7 +1424,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -1642,7 +1642,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -1872,7 +1872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.011764707, g: 0.011764707, b: 0.011764707, a: 0.392}
+  m_Color: {r: 0.09411766, g: 0.078431375, b: 0.07450981, a: 0.392}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1931,7 +1931,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -2127,7 +2127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.8196079, g: 0.6039216, b: 0.054901965, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2190,7 +2190,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -2455,7 +2455,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -2637,7 +2637,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -2819,7 +2819,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -3006,7 +3006,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -3232,7 +3232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.8196079, g: 0.6039216, b: 0.054901965, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3295,7 +3295,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -3477,7 +3477,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -3742,7 +3742,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -3938,7 +3938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.81960785, g: 0.6039216, b: 0.05490196, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4060,7 +4060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9150943, g: 0.6570981, b: 0.2935208, a: 0.30980393}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4119,7 +4119,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -4331,7 +4331,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -4543,7 +4543,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -4751,10 +4751,10 @@ RectTransform:
   m_Father: {fileID: 204215560}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.9999771, y: 236.9}
-  m_SizeDelta: {x: 152.1, y: 156.9}
+  m_AnchorMin: {x: 0, y: 0.75}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &579472781
 MonoBehaviour:
@@ -4774,7 +4774,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4828,7 +4828,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -5015,7 +5015,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -5197,7 +5197,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -5380,8 +5380,8 @@ RectTransform:
   m_Father: {fileID: 732179943}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.45, y: 0.91}
-  m_AnchorMax: {x: 0.9, y: 0.98}
+  m_AnchorMin: {x: 0.45, y: 0.9}
+  m_AnchorMax: {x: 0.9, y: 0.99}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
@@ -5461,7 +5461,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -5643,7 +5643,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -5842,13 +5842,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 0.87418437, b: 0.4811321, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 44252c678785b324f87f95e4ac818061, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5901,7 +5901,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -6109,10 +6109,10 @@ RectTransform:
   m_Father: {fileID: 204215560}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.9999771, y: -76.90004}
-  m_SizeDelta: {x: 152.1, y: 156.9}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &727204203
 MonoBehaviour:
@@ -6132,7 +6132,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6203,7 +6203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.8745098, b: 0.48235294, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6262,7 +6262,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -6545,7 +6545,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -6741,7 +6741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.81960785, g: 0.6039216, b: 0.05490196, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6939,7 +6939,7 @@ MonoBehaviour:
   - {fileID: 497401389}
   - {fileID: 16385459}
   - {fileID: 2121467933}
-  emptyPanel: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f, type: 3}
+  emptyPanel: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4, type: 3}
   panel: {fileID: 6329069418552258378, guid: 1613bf481d385c6459d32e7b7de1314b, type: 3}
   panelImage: {fileID: 0}
   startPipe: {fileID: 0}
@@ -6953,27 +6953,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8652ff96362d2204a8d996430df67c83, type: 3}
   - {fileID: 21300000, guid: 9324e61a1459a2340b436696bf3eec49, type: 3}
   startArray:
-  - {fileID: 21300000, guid: efa8c0f819217c64591bcf930be029c1, type: 3}
-  - {fileID: 21300000, guid: bbed91e99821f7e468a1ae8d89d50204, type: 3}
-  - {fileID: 21300000, guid: da75df685ec54da4d853061f7059402d, type: 3}
-  - {fileID: 21300000, guid: 14a9cd0251cdd724eb48f33bf4099a1e, type: 3}
+  - {fileID: 21300000, guid: 82c416917d3e6b747a56eb88e27ecbbc, type: 3}
+  - {fileID: 21300000, guid: 0ad2219b642c17541a86011932cccf48, type: 3}
+  - {fileID: 21300000, guid: 7d5f95fae67940d49b2428304b008242, type: 3}
+  - {fileID: 21300000, guid: 14e14d7d22df2514a846904bb0a584f9, type: 3}
   startFill:
-  - {fileID: 21300000, guid: ae1cb2c35f4dfbc43ad3c84ab5239200, type: 3}
-  - {fileID: 21300000, guid: b855963ba164a7e4ea0433ec3c77666e, type: 3}
-  - {fileID: 21300000, guid: e502cb0b7b4f0214793f3d0233785976, type: 3}
-  - {fileID: 21300000, guid: 1336eb1aef2c1a748852a6c2e4402860, type: 3}
-  - {fileID: 21300000, guid: 150fe4fff669b964398bfc7290528c9c, type: 3}
-  - {fileID: 21300000, guid: 62b40f6b46ebb41439f59956587fb1d1, type: 3}
-  - {fileID: 21300000, guid: a4587f1648e4901449e1ed566c11c077, type: 3}
-  - {fileID: 21300000, guid: 09ae888c07390bc46a1a5c70ea187298, type: 3}
-  - {fileID: 21300000, guid: 003e52d1dee9e6944bfba7655536bf18, type: 3}
-  - {fileID: 21300000, guid: 4a74d332becb63d4aaa07877c8dd6c1e, type: 3}
-  - {fileID: 21300000, guid: 4c15c9b632bb04541b579565bc71e246, type: 3}
-  - {fileID: 21300000, guid: 5778d172d0f26de4b95199e7173cd5f1, type: 3}
-  - {fileID: 21300000, guid: ac55b935b4fbadf418c2e8cefc99f7af, type: 3}
-  - {fileID: 21300000, guid: 9491b1f3c7b65fc4d9cebca772601c1a, type: 3}
-  - {fileID: 21300000, guid: 26ff992f73e6c554894c2c5d5d2998ce, type: 3}
-  - {fileID: 21300000, guid: 34714fbae2b352d44a7606fef0e23d14, type: 3}
+  - {fileID: 21300000, guid: f7cf30ea3a75deb47a1163a386f582c8, type: 3}
+  - {fileID: 21300000, guid: 8f7ab876be8959746ba39142a873eadb, type: 3}
+  - {fileID: 21300000, guid: 65c40748ded10eb48b524e2de0b410a9, type: 3}
+  - {fileID: 21300000, guid: dd53b49814f0f334da8fb8434e6060ca, type: 3}
+  - {fileID: 21300000, guid: c2bc8736a44b2c34d9c0cb68ddc372b8, type: 3}
+  - {fileID: 21300000, guid: bce663d0ec631bd4f9c004f5413e60cb, type: 3}
+  - {fileID: 21300000, guid: 53ac4016d5b67744a807e2e1a1a3ca41, type: 3}
+  - {fileID: 21300000, guid: 85e586ffac2494c4784b94dd1db8c5f6, type: 3}
+  - {fileID: 21300000, guid: b199474a13e8d264c9774f9ceeac759e, type: 3}
+  - {fileID: 21300000, guid: b2c285cee52f28440af69c4f73652cf7, type: 3}
+  - {fileID: 21300000, guid: 0bd6fe8c0ee50964aa1aa7af5259c83f, type: 3}
+  - {fileID: 21300000, guid: 807f109c0bbc8754c8e22126e7307348, type: 3}
+  - {fileID: 21300000, guid: 12c8726a2bd97a449bf78d7eae765fb7, type: 3}
+  - {fileID: 21300000, guid: 599415f66bd15674fa09d3e3a4899311, type: 3}
+  - {fileID: 21300000, guid: af19ab502f4a97646a5db97e90ef52bf, type: 3}
+  - {fileID: 21300000, guid: 5f2087a3a19653c47b490eb3c98958d2, type: 3}
   fillBL:
   - {fileID: 21300000, guid: 5e66fe310a6ebc147ad2302e5414115c, type: 3}
   - {fileID: 21300000, guid: 720ba95c1369b584aa5a99f93cdfe917, type: 3}
@@ -7172,7 +7172,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -7354,7 +7354,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -7541,7 +7541,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -7723,7 +7723,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -7910,7 +7910,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -8122,7 +8122,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -8318,7 +8318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.8207547, g: 0.6038848, b: 0.054200765, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8381,7 +8381,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -8563,7 +8563,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -8750,7 +8750,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -8962,7 +8962,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -9144,7 +9144,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -9356,7 +9356,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -9602,7 +9602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.91764706, g: 0.65882355, b: 0.29411766, a: 0.30980393}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -9657,10 +9657,10 @@ RectTransform:
   m_Father: {fileID: 204215560}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: 80}
-  m_SizeDelta: {x: 152.1, y: 156.9}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1223065904
 MonoBehaviour:
@@ -9680,7 +9680,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9734,7 +9734,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -9921,7 +9921,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -10162,7 +10162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.91764706, g: 0.65882355, b: 0.29411766, a: 0.30980393}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -10221,7 +10221,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -10433,7 +10433,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -10620,7 +10620,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -10802,7 +10802,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -10984,7 +10984,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -11166,7 +11166,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -11378,7 +11378,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -11581,7 +11581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.015686275, g: 0.015686275, b: 0.015686275, a: 1}
+  m_Color: {r: 0.09411766, g: 0.078431375, b: 0.07450981, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -11640,7 +11640,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -11827,7 +11827,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -12019,7 +12019,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -12231,7 +12231,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -12443,7 +12443,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -12655,7 +12655,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -12867,7 +12867,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -13054,7 +13054,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -13241,7 +13241,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -13419,10 +13419,10 @@ RectTransform:
   m_Father: {fileID: 204215560}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.9999771, y: -234.65001}
-  m_SizeDelta: {x: 152.1, y: 156.9}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.25}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1565199433
 MonoBehaviour:
@@ -13442,7 +13442,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13496,7 +13496,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -13683,7 +13683,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -13870,7 +13870,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -14052,7 +14052,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -14400,7 +14400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.91764706, g: 0.65882355, b: 0.29411766, a: 0.30980393}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -14459,7 +14459,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -14641,7 +14641,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -14828,7 +14828,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -15176,7 +15176,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -15377,7 +15377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.81960785, g: 0.6039216, b: 0.05490196, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -15440,7 +15440,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -15722,13 +15722,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 0.8745098, b: 0.48235294, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 44252c678785b324f87f95e4ac818061, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -15781,7 +15781,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -15993,7 +15993,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -16175,7 +16175,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: 6329069418552258369, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
@@ -16357,7 +16357,7 @@ PrefabInstance:
         type: 3}
       propertyPath: emptyPanel
       value: 
-      objectReference: {fileID: 21300000, guid: 7de61ef20d0f68543b10310f7883640f,
+      objectReference: {fileID: 21300000, guid: 67fafd6ec91a2f342be9442ba307f7c4,
         type: 3}
     - target: {fileID: -6178805911893200389, guid: 1613bf481d385c6459d32e7b7de1314b,
         type: 3}
