@@ -24,6 +24,10 @@ public class PanelScript : MonoBehaviour, IPointerClickHandler
 
     public string flowDirection;
 
+    public AudioSource audioSource;
+    public AudioClip clip;
+    public float volume = 0.5f;
+
     void Start()
     {
         panel.onClick.AddListener(ButtonClicked);
@@ -33,6 +37,7 @@ public class PanelScript : MonoBehaviour, IPointerClickHandler
         panelFourImage.sprite = pipeArray[Random.Range(0, pipeArray.Length)];
         GameManager.instance.isStartingPipe = true;
         GameManager.instance.score = 0;
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -121,11 +126,14 @@ public class PanelScript : MonoBehaviour, IPointerClickHandler
 
                 if (currentSprite == GameManager.instance.fillBL[3])
                 {
-                    GameManager.instance.currentPipe = GameManager.instance.currentPipe - 1;
-                    currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
-                    if (currentSprite == GameManager.instance.pipeArray[1] || currentSprite == GameManager.instance.pipeArray[3] || currentSprite == GameManager.instance.pipeArray[5])
+                    if (GameManager.instance.currentPipe % 10 != 0)
                     {
-                        StartCoroutine(FillPipe("R"));
+                        GameManager.instance.currentPipe = GameManager.instance.currentPipe - 1;
+                        currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
+                        if (currentSprite == GameManager.instance.pipeArray[1] || currentSprite == GameManager.instance.pipeArray[3] || currentSprite == GameManager.instance.pipeArray[5])
+                        {
+                            StartCoroutine(FillPipe("R"));
+                        }
                     }
 
                     else
@@ -137,11 +145,14 @@ public class PanelScript : MonoBehaviour, IPointerClickHandler
 
                 else if (currentSprite == GameManager.instance.fillBL[7])
                 {
-                    GameManager.instance.currentPipe = GameManager.instance.currentPipe + 10;
-                    currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
-                    if (currentSprite == GameManager.instance.pipeArray[2] || currentSprite == GameManager.instance.pipeArray[4] || currentSprite == GameManager.instance.pipeArray[5])
+                    if (GameManager.instance.currentPipe < 60)
                     {
-                        StartCoroutine(FillPipe("T"));
+                        GameManager.instance.currentPipe = GameManager.instance.currentPipe + 10;
+                        currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
+                        if (currentSprite == GameManager.instance.pipeArray[2] || currentSprite == GameManager.instance.pipeArray[4] || currentSprite == GameManager.instance.pipeArray[5])
+                        {
+                            StartCoroutine(FillPipe("T"));
+                        }
                     }
 
                     else
@@ -153,11 +164,14 @@ public class PanelScript : MonoBehaviour, IPointerClickHandler
 
                 else if (currentSprite == GameManager.instance.fillBR[3])
                 {
-                    GameManager.instance.currentPipe = GameManager.instance.currentPipe + 1;
-                    currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
-                    if (currentSprite == GameManager.instance.pipeArray[0] || currentSprite == GameManager.instance.pipeArray[3] || currentSprite == GameManager.instance.pipeArray[4])
+                    if (GameManager.instance.currentPipe % 10 != 9)
                     {
-                        StartCoroutine(FillPipe("L"));
+                        GameManager.instance.currentPipe = GameManager.instance.currentPipe + 1;
+                        currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
+                        if (currentSprite == GameManager.instance.pipeArray[0] || currentSprite == GameManager.instance.pipeArray[3] || currentSprite == GameManager.instance.pipeArray[4])
+                        {
+                            StartCoroutine(FillPipe("L"));
+                        }
                     }
 
                     else
@@ -169,11 +183,14 @@ public class PanelScript : MonoBehaviour, IPointerClickHandler
 
                 else if (currentSprite == GameManager.instance.fillBR[7])
                 {
-                    GameManager.instance.currentPipe = GameManager.instance.currentPipe + 10;
-                    currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
-                    if (currentSprite == GameManager.instance.pipeArray[2] || currentSprite == GameManager.instance.pipeArray[4] || currentSprite == GameManager.instance.pipeArray[5])
+                    if (GameManager.instance.currentPipe < 60)
                     {
-                        StartCoroutine(FillPipe("T"));
+                        GameManager.instance.currentPipe = GameManager.instance.currentPipe + 10;
+                        currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
+                        if (currentSprite == GameManager.instance.pipeArray[2] || currentSprite == GameManager.instance.pipeArray[4] || currentSprite == GameManager.instance.pipeArray[5])
+                        {
+                            StartCoroutine(FillPipe("T"));
+                        }
                     }
 
                     else
@@ -185,11 +202,14 @@ public class PanelScript : MonoBehaviour, IPointerClickHandler
 
                 else if (currentSprite == GameManager.instance.fillV[3])
                 {
-                    GameManager.instance.currentPipe = GameManager.instance.currentPipe - 10;
-                    currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
-                    if (currentSprite == GameManager.instance.pipeArray[0] || currentSprite == GameManager.instance.pipeArray[1] || currentSprite == GameManager.instance.pipeArray[2])
+                    if (GameManager.instance.currentPipe > 9)
                     {
-                        StartCoroutine(FillPipe("B"));
+                        GameManager.instance.currentPipe = GameManager.instance.currentPipe - 10;
+                        currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
+                        if (currentSprite == GameManager.instance.pipeArray[0] || currentSprite == GameManager.instance.pipeArray[1] || currentSprite == GameManager.instance.pipeArray[2])
+                        {
+                            StartCoroutine(FillPipe("B"));
+                        }
                     }
 
                     else
@@ -201,11 +221,14 @@ public class PanelScript : MonoBehaviour, IPointerClickHandler
 
                 else if (currentSprite == GameManager.instance.fillV[7])
                 {
-                    GameManager.instance.currentPipe = GameManager.instance.currentPipe + 10;
-                    currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
-                    if (currentSprite == GameManager.instance.pipeArray[2] || currentSprite == GameManager.instance.pipeArray[4] || currentSprite == GameManager.instance.pipeArray[5])
+                    if (GameManager.instance.currentPipe < 60)
                     {
-                        StartCoroutine(FillPipe("T"));
+                        GameManager.instance.currentPipe = GameManager.instance.currentPipe + 10;
+                        currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
+                        if (currentSprite == GameManager.instance.pipeArray[2] || currentSprite == GameManager.instance.pipeArray[4] || currentSprite == GameManager.instance.pipeArray[5])
+                        {
+                            StartCoroutine(FillPipe("T"));
+                        }
                     }
 
                     else
@@ -217,11 +240,14 @@ public class PanelScript : MonoBehaviour, IPointerClickHandler
 
                 else if (currentSprite == GameManager.instance.fillH[3])
                 {
-                    GameManager.instance.currentPipe = GameManager.instance.currentPipe + 1;
-                    currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
-                    if (currentSprite == GameManager.instance.pipeArray[0] || currentSprite == GameManager.instance.pipeArray[3] || currentSprite == GameManager.instance.pipeArray[4])
+                    if (GameManager.instance.currentPipe % 10 != 9)
                     {
-                        StartCoroutine(FillPipe("L"));
+                        GameManager.instance.currentPipe = GameManager.instance.currentPipe + 1;
+                        currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
+                        if (currentSprite == GameManager.instance.pipeArray[0] || currentSprite == GameManager.instance.pipeArray[3] || currentSprite == GameManager.instance.pipeArray[4])
+                        {
+                            StartCoroutine(FillPipe("L"));
+                        }
                     }
 
                     else
@@ -233,11 +259,14 @@ public class PanelScript : MonoBehaviour, IPointerClickHandler
 
                 else if (currentSprite == GameManager.instance.fillH[7])
                 {
-                    GameManager.instance.currentPipe = GameManager.instance.currentPipe - 1;
-                    currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
-                    if (currentSprite == GameManager.instance.pipeArray[1] || currentSprite == GameManager.instance.pipeArray[3] || currentSprite == GameManager.instance.pipeArray[5])
+                    if (GameManager.instance.currentPipe % 10 != 0)
                     {
-                        StartCoroutine(FillPipe("R"));
+                        GameManager.instance.currentPipe = GameManager.instance.currentPipe - 1;
+                        currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
+                        if (currentSprite == GameManager.instance.pipeArray[1] || currentSprite == GameManager.instance.pipeArray[3] || currentSprite == GameManager.instance.pipeArray[5])
+                        {
+                            StartCoroutine(FillPipe("R"));
+                        }
                     }
 
                     else
@@ -249,11 +278,14 @@ public class PanelScript : MonoBehaviour, IPointerClickHandler
 
                 else if (currentSprite == GameManager.instance.fillTL[7])
                 {
-                    GameManager.instance.currentPipe = GameManager.instance.currentPipe - 1;
-                    currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
-                    if (currentSprite == GameManager.instance.pipeArray[1] || currentSprite == GameManager.instance.pipeArray[3] || currentSprite == GameManager.instance.pipeArray[5])
+                    if (GameManager.instance.currentPipe % 10 != 0)
                     {
-                        StartCoroutine(FillPipe("R"));
+                        GameManager.instance.currentPipe = GameManager.instance.currentPipe - 1;
+                        currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
+                        if (currentSprite == GameManager.instance.pipeArray[1] || currentSprite == GameManager.instance.pipeArray[3] || currentSprite == GameManager.instance.pipeArray[5])
+                        {
+                            StartCoroutine(FillPipe("R"));
+                        }
                     }
 
                     else
@@ -265,11 +297,14 @@ public class PanelScript : MonoBehaviour, IPointerClickHandler
 
                 else if (currentSprite == GameManager.instance.fillTL[3])
                 {
-                    GameManager.instance.currentPipe = GameManager.instance.currentPipe - 10;
-                    currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
-                    if (currentSprite == GameManager.instance.pipeArray[0] || currentSprite == GameManager.instance.pipeArray[1] || currentSprite == GameManager.instance.pipeArray[2])
+                    if (GameManager.instance.currentPipe > 9)
                     {
-                        StartCoroutine(FillPipe("B"));
+                        GameManager.instance.currentPipe = GameManager.instance.currentPipe - 10;
+                        currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
+                        if (currentSprite == GameManager.instance.pipeArray[0] || currentSprite == GameManager.instance.pipeArray[1] || currentSprite == GameManager.instance.pipeArray[2])
+                        {
+                            StartCoroutine(FillPipe("B"));
+                        }
                     }
 
                     else
@@ -281,11 +316,14 @@ public class PanelScript : MonoBehaviour, IPointerClickHandler
 
                 else if (currentSprite == GameManager.instance.fillTR[7])
                 {
-                    GameManager.instance.currentPipe = GameManager.instance.currentPipe + 1;
-                    currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
-                    if (currentSprite == GameManager.instance.pipeArray[0] || currentSprite == GameManager.instance.pipeArray[3] || currentSprite == GameManager.instance.pipeArray[4])
+                    if (GameManager.instance.currentPipe % 10 != 9)
                     {
-                        StartCoroutine(FillPipe("L"));
+                        GameManager.instance.currentPipe = GameManager.instance.currentPipe + 1;
+                        currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
+                        if (currentSprite == GameManager.instance.pipeArray[0] || currentSprite == GameManager.instance.pipeArray[3] || currentSprite == GameManager.instance.pipeArray[4])
+                        {
+                            StartCoroutine(FillPipe("L"));
+                        }
                     }
 
                     else
@@ -297,11 +335,14 @@ public class PanelScript : MonoBehaviour, IPointerClickHandler
 
                 else if (currentSprite == GameManager.instance.fillTR[3])
                 {
-                    GameManager.instance.currentPipe = GameManager.instance.currentPipe - 10;
-                    currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
-                    if (currentSprite == GameManager.instance.pipeArray[0] || currentSprite == GameManager.instance.pipeArray[1] || currentSprite == GameManager.instance.pipeArray[2])
+                    if (GameManager.instance.currentPipe > 9)
                     {
-                        StartCoroutine(FillPipe("B"));
+                        GameManager.instance.currentPipe = GameManager.instance.currentPipe - 10;
+                        currentSprite = GameManager.instance.panels[GameManager.instance.currentPipe].GetComponent<Image>().sprite;
+                        if (currentSprite == GameManager.instance.pipeArray[0] || currentSprite == GameManager.instance.pipeArray[1] || currentSprite == GameManager.instance.pipeArray[2])
+                        {
+                            StartCoroutine(FillPipe("B"));
+                        }
                     }
 
                     else
@@ -321,6 +362,7 @@ public class PanelScript : MonoBehaviour, IPointerClickHandler
         panelThreeImage.sprite = panelTwoImage.sprite;
         panelTwoImage.sprite = panelOneImage.sprite;
         panelOneImage.sprite = pipeArray[Random.Range(0, pipeArray.Length)];
+        audioSource.PlayOneShot(clip, volume);
 
         if (IsSet == false)
         {
@@ -342,7 +384,14 @@ public class PanelScript : MonoBehaviour, IPointerClickHandler
             {
                 panelImage.sprite = emptyPanel;
                 panel.interactable = true;
+                IsSet = false;
+                GameManager.instance.score = GameManager.instance.score - 20;
+                GameManager.instance.scoreText.GetComponent<UnityEngine.UI.Text>().text = "Score: " + GameManager.instance.score;
+            }
 
+            else
+            {
+                panel.interactable = false;
             }
         }
     }
