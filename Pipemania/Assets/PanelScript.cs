@@ -4,8 +4,9 @@ using System.ComponentModel.Design;
 using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class PanelScript : MonoBehaviour
+public class PanelScript : MonoBehaviour, IPointerClickHandler
 {
     public Button panel;
     private bool IsSet;
@@ -21,16 +22,6 @@ public class PanelScript : MonoBehaviour
     public Sprite emptyPanel;
     public Sprite currentSprite;
 
-    private BoxCollider2D colliderLeft;
-    private BoxCollider2D colliderTop;
-    private BoxCollider2D colliderRight;
-    private BoxCollider2D colliderBottom;
-
-    public bool conBool;
-    public Image collImage;
-
-    //public bool GameManager.instance.isStartingPipe;
-
     public string flowDirection;
 
     void Start()
@@ -40,7 +31,6 @@ public class PanelScript : MonoBehaviour
         panelTwoImage.sprite = pipeArray[Random.Range(0, pipeArray.Length)];
         panelThreeImage.sprite = pipeArray[Random.Range(0, pipeArray.Length)];
         panelFourImage.sprite = pipeArray[Random.Range(0, pipeArray.Length)];
-        EnableColliders();
         GameManager.instance.isStartingPipe = true;
         GameManager.instance.score = 0;
     }
@@ -337,107 +327,23 @@ public class PanelScript : MonoBehaviour
             IsSet = true;
             panel.interactable = false;
         }
-
-        Type();
     }
 
-    public void EnableColliders()
+    public void OnPointerClick(PointerEventData eventData)
     {
-        colliderLeft = panel.transform.Find("Left").GetComponent<BoxCollider2D>();
-        colliderLeft.enabled = true;
-
-        colliderTop = panel.transform.Find("Top").GetComponent<BoxCollider2D>();
-        colliderTop.enabled = true;
-
-        colliderRight = panel.transform.Find("Right").GetComponent<BoxCollider2D>();
-        colliderRight.enabled = true;
-
-        colliderBottom = panel.transform.Find("Bottom").GetComponent<BoxCollider2D>();
-        colliderBottom.enabled = true;
-
-    }
-
-    public void DisableColliders()
-    {
-        colliderLeft = panel.transform.Find("Left").GetComponent<BoxCollider2D>();
-        colliderLeft.enabled = false;
-
-        colliderTop = panel.transform.Find("Top").GetComponent<BoxCollider2D>();
-        colliderTop.enabled = false;
-
-        colliderRight = panel.transform.Find("Right").GetComponent<BoxCollider2D>();
-        colliderRight.enabled = false;
-
-        colliderBottom = panel.transform.Find("Bottom").GetComponent<BoxCollider2D>();
-        colliderBottom.enabled = false;
-    }
-
-    public void Type()
-    {
-        //Debug.Log("Type method");
-        if (panelImage.sprite == pipeArray[0])
+        if (eventData.button == PointerEventData.InputButton.Right)
         {
-            EnableColliders();
-            //Bottom Left
-            colliderTop.isTrigger = false;
-            colliderLeft.isTrigger = true;
-            colliderBottom.isTrigger = true;
-            colliderRight.isTrigger = false;
-        }
+            if (panelImage.sprite == GameManager.instance.pipeArray[0] ||
+                panelImage.sprite == GameManager.instance.pipeArray[1] ||
+                panelImage.sprite == GameManager.instance.pipeArray[2] ||
+                panelImage.sprite == GameManager.instance.pipeArray[3] ||
+                panelImage.sprite == GameManager.instance.pipeArray[4] ||
+                panelImage.sprite == GameManager.instance.pipeArray[5])
+            {
+                panelImage.sprite = emptyPanel;
+                panel.interactable = true;
 
-        else if (panelImage.sprite == pipeArray[1])
-        {
-            EnableColliders();
-            //Debug.Log("Bottom Right");
-            colliderTop.isTrigger = false;
-            colliderLeft.isTrigger = false;
-            colliderBottom.isTrigger = true;
-            colliderRight.isTrigger = true;
-        }
-
-        else if (panelImage.sprite == pipeArray[2])
-        {
-            EnableColliders();
-            //Debug.Log("Vertical");
-            colliderTop.isTrigger = true;
-            colliderLeft.isTrigger = false;
-            colliderBottom.isTrigger = true;
-            colliderRight.isTrigger = false;
-        }
-
-        else if (panelImage.sprite == pipeArray[3])
-        {
-            EnableColliders();
-            //Debug.Log("Horizontal");
-            colliderTop.isTrigger = false;
-            colliderLeft.isTrigger = true;
-            colliderBottom.isTrigger = false;
-            colliderRight.isTrigger = true;
-        }
-
-        else if (panelImage.sprite == pipeArray[4])
-        {
-            EnableColliders();
-            //Debug.Log("Top Left");
-            colliderTop.isTrigger = true;
-            colliderLeft.isTrigger = true;
-            colliderBottom.isTrigger = false;
-            colliderRight.isTrigger = false;
-        }
-
-        else if (panelImage.sprite == pipeArray[5])
-        {
-            EnableColliders();
-            //Debug.Log("Top Right");
-            colliderTop.isTrigger = true;
-            colliderLeft.isTrigger = false;
-            colliderBottom.isTrigger = false;
-            colliderRight.isTrigger = true;
-        }
-
-        else
-        {
-            DisableColliders();
+            }
         }
     }
 
