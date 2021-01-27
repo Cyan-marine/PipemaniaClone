@@ -21,15 +21,8 @@ public class PanelScript : MonoBehaviour
     public Sprite emptyPanel;
     public Sprite currentSprite;
 
-    private BoxCollider2D colliderLeft;
-    private BoxCollider2D colliderTop;
-    private BoxCollider2D colliderRight;
-    private BoxCollider2D colliderBottom;
-
-    public bool conBool;
-    public Image collImage;
-
-    //public bool GameManager.instance.isStartingPipe;
+    //public bool conBool;
+    //public Image collImage;
 
     public string flowDirection;
 
@@ -40,15 +33,12 @@ public class PanelScript : MonoBehaviour
         panelTwoImage.sprite = pipeArray[Random.Range(0, pipeArray.Length)];
         panelThreeImage.sprite = pipeArray[Random.Range(0, pipeArray.Length)];
         panelFourImage.sprite = pipeArray[Random.Range(0, pipeArray.Length)];
-        EnableColliders();
         GameManager.instance.isStartingPipe = true;
         GameManager.instance.score = 0;
     }
 
     void Update()
     {
-        //Debug.Log(GameManager.instance.currentPipe);
-        //Debug.Log(GameManager.instance.fillRate);
         if (GameManager.instance.fillRate == 4)
         {
             GameManager.instance.fillRate = 0;
@@ -336,108 +326,6 @@ public class PanelScript : MonoBehaviour
         {
             IsSet = true;
             panel.interactable = false;
-        }
-
-        Type();
-    }
-
-    public void EnableColliders()
-    {
-        colliderLeft = panel.transform.Find("Left").GetComponent<BoxCollider2D>();
-        colliderLeft.enabled = true;
-
-        colliderTop = panel.transform.Find("Top").GetComponent<BoxCollider2D>();
-        colliderTop.enabled = true;
-
-        colliderRight = panel.transform.Find("Right").GetComponent<BoxCollider2D>();
-        colliderRight.enabled = true;
-
-        colliderBottom = panel.transform.Find("Bottom").GetComponent<BoxCollider2D>();
-        colliderBottom.enabled = true;
-
-    }
-
-    public void DisableColliders()
-    {
-        colliderLeft = panel.transform.Find("Left").GetComponent<BoxCollider2D>();
-        colliderLeft.enabled = false;
-
-        colliderTop = panel.transform.Find("Top").GetComponent<BoxCollider2D>();
-        colliderTop.enabled = false;
-
-        colliderRight = panel.transform.Find("Right").GetComponent<BoxCollider2D>();
-        colliderRight.enabled = false;
-
-        colliderBottom = panel.transform.Find("Bottom").GetComponent<BoxCollider2D>();
-        colliderBottom.enabled = false;
-    }
-
-    public void Type()
-    {
-        //Debug.Log("Type method");
-        if (panelImage.sprite == pipeArray[0])
-        {
-            EnableColliders();
-            //Bottom Left
-            colliderTop.isTrigger = false;
-            colliderLeft.isTrigger = true;
-            colliderBottom.isTrigger = true;
-            colliderRight.isTrigger = false;
-        }
-
-        else if (panelImage.sprite == pipeArray[1])
-        {
-            EnableColliders();
-            //Debug.Log("Bottom Right");
-            colliderTop.isTrigger = false;
-            colliderLeft.isTrigger = false;
-            colliderBottom.isTrigger = true;
-            colliderRight.isTrigger = true;
-        }
-
-        else if (panelImage.sprite == pipeArray[2])
-        {
-            EnableColliders();
-            //Debug.Log("Vertical");
-            colliderTop.isTrigger = true;
-            colliderLeft.isTrigger = false;
-            colliderBottom.isTrigger = true;
-            colliderRight.isTrigger = false;
-        }
-
-        else if (panelImage.sprite == pipeArray[3])
-        {
-            EnableColliders();
-            //Debug.Log("Horizontal");
-            colliderTop.isTrigger = false;
-            colliderLeft.isTrigger = true;
-            colliderBottom.isTrigger = false;
-            colliderRight.isTrigger = true;
-        }
-
-        else if (panelImage.sprite == pipeArray[4])
-        {
-            EnableColliders();
-            //Debug.Log("Top Left");
-            colliderTop.isTrigger = true;
-            colliderLeft.isTrigger = true;
-            colliderBottom.isTrigger = false;
-            colliderRight.isTrigger = false;
-        }
-
-        else if (panelImage.sprite == pipeArray[5])
-        {
-            EnableColliders();
-            //Debug.Log("Top Right");
-            colliderTop.isTrigger = true;
-            colliderLeft.isTrigger = false;
-            colliderBottom.isTrigger = false;
-            colliderRight.isTrigger = true;
-        }
-
-        else
-        {
-            DisableColliders();
         }
     }
 

@@ -11,13 +11,12 @@ public class GameManager : MonoBehaviour
     public Button[] panels;
     public Image[] panelImages;
     public Sprite emptyPanel;
-
     public Button panel;
     public Image panelImage;
-    public PanelScript panelScript;
-
     public Button startPipe;
     public Image startPipeImage;
+
+    public PanelScript panelScript;
 
     public Sprite[] pipeArray;
     public Sprite[] startArray;
@@ -29,11 +28,6 @@ public class GameManager : MonoBehaviour
     public Sprite[] fillTL;
     public Sprite[] fillTR;
     public Sprite[] fillV;
-
-    private BoxCollider2D colliderLeft;
-    private BoxCollider2D colliderTop;
-    private BoxCollider2D colliderRight;
-    private BoxCollider2D colliderBottom;
 
     public GameObject gameOver;
     public GameObject gameStart;
@@ -68,17 +62,6 @@ public class GameManager : MonoBehaviour
         restart.onClick.AddListener(Restart);
         start.onClick.AddListener(StartGame);
         exit.onClick.AddListener(QuitGame);
-
-        colliderLeft = startPipe.transform.Find("Left").GetComponent<BoxCollider2D>();
-        colliderTop = startPipe.transform.Find("Top").GetComponent<BoxCollider2D>();
-        colliderRight = startPipe.transform.Find("Right").GetComponent<BoxCollider2D>();
-        colliderBottom = startPipe.transform.Find("Bottom").GetComponent<BoxCollider2D>();
-
-        colliderLeft.enabled = true;
-        colliderTop.enabled = true;
-        colliderRight.enabled = true;
-        colliderBottom.enabled = true;
-        Type();
 
         score = 0;
         scoreText.GetComponent<UnityEngine.UI.Text>().text = "Score: " + score;
@@ -228,46 +211,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void Type()
-    {
-        //Debug.Log("Type method for start");
-        if (startPipeImage.sprite == startArray[0])
-        {
-            //Debug.Log("Horizontal Bottom");
-            colliderTop.isTrigger = true;
-            colliderLeft.isTrigger = false;
-            colliderBottom.isTrigger = false;
-            colliderRight.isTrigger = false;
-        }
-
-        else if (startPipeImage.sprite == startArray[1])
-        {
-            //Debug.Log("Horizontal Top");
-            colliderTop.isTrigger = false;
-            colliderLeft.isTrigger = false;
-            colliderBottom.isTrigger = true;
-            colliderRight.isTrigger = false;
-        }
-
-        else if (startPipeImage.sprite == startArray[2])
-        {
-            //Debug.Log("Vertical Left");
-            colliderTop.isTrigger = false;
-            colliderLeft.isTrigger = false;
-            colliderBottom.isTrigger = false;
-            colliderRight.isTrigger = true;
-        }
-
-        else if (startPipeImage.sprite == startArray[3])
-        {
-            //Debug.Log("Vertical Right");
-            colliderTop.isTrigger = false;
-            colliderLeft.isTrigger = true;
-            colliderBottom.isTrigger = false;
-            colliderRight.isTrigger = false;
-        }
-    }
-
     public void StartGame()
     {
         startPipe = panels[UnityEngine.Random.Range(1, 5) * 10 + UnityEngine.Random.Range(1, 8)];
@@ -297,13 +240,6 @@ public class GameManager : MonoBehaviour
         }
         score = 0;
         scoreText.GetComponent<UnityEngine.UI.Text>().text = "Score: " + score;
-
-        startPipe = panels[UnityEngine.Random.Range(1, 5) * 10 + UnityEngine.Random.Range(1, 8)];
-        currentPipe = System.Array.IndexOf(panels, startPipe);
-        startPipe.interactable = false;
-        startPipeImage = startPipe.GetComponent<Image>();
-        panelImage = panel.GetComponent<Image>();
-        startPipeImage.sprite = startArray[UnityEngine.Random.Range(0, startArray.Length)];
 
         isStartingPipe = true;
         StartGame();
