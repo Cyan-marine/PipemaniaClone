@@ -4,8 +4,9 @@ using System.ComponentModel.Design;
 using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class PanelScript : MonoBehaviour
+public class PanelScript : MonoBehaviour, IPointerClickHandler
 {
     public Button panel;
     private bool IsSet;
@@ -20,9 +21,6 @@ public class PanelScript : MonoBehaviour
     public Sprite[] pipeArray;
     public Sprite emptyPanel;
     public Sprite currentSprite;
-
-    //public bool conBool;
-    //public Image collImage;
 
     public string flowDirection;
 
@@ -39,6 +37,8 @@ public class PanelScript : MonoBehaviour
 
     void Update()
     {
+        //Debug.Log(GameManager.instance.currentPipe);
+        //Debug.Log(GameManager.instance.fillRate);
         if (GameManager.instance.fillRate == 4)
         {
             GameManager.instance.fillRate = 0;
@@ -326,6 +326,24 @@ public class PanelScript : MonoBehaviour
         {
             IsSet = true;
             panel.interactable = false;
+        }
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (eventData.button == PointerEventData.InputButton.Right)
+        {
+            if (panelImage.sprite == GameManager.instance.pipeArray[0] ||
+                panelImage.sprite == GameManager.instance.pipeArray[1] ||
+                panelImage.sprite == GameManager.instance.pipeArray[2] ||
+                panelImage.sprite == GameManager.instance.pipeArray[3] ||
+                panelImage.sprite == GameManager.instance.pipeArray[4] ||
+                panelImage.sprite == GameManager.instance.pipeArray[5])
+            {
+                panelImage.sprite = emptyPanel;
+                panel.interactable = true;
+
+            }
         }
     }
 
